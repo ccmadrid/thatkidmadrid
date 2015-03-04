@@ -52,18 +52,23 @@ body {
 }
 
 .reset {
-	color: #ddd;
+	color: #bbb;
 	font-size: 2em;
 	text-align: center;
 	text-decoration: none;
-	width: 5em;
+	width: 100%;
 	height: 5em;
 	z-index: 1;
 	position: absolute;
-	left: calc(50% - 2.5em);
-	top: calc(50% - 2.5em);
+	padding: 2em;
+	top: calc(25%);
 	-webkit-transition: color 500ms ease;
 	transition: color 500ms ease;
+}
+
+em {
+	font-weight: bold;
+	color: #fff;
 }
 
 .reset:hover {
@@ -527,3 +532,5 @@ body {
 }
 
 }
+
+
