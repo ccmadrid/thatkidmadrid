@@ -199,11 +199,8 @@ em {
 	opacity: 0;
 }
 
-.reset-before, .reset-after {
-	opacity: 0;
-}
 
-.kidmadrid-before, .reset-before {
+.kidmadrid-before  {
 	-webkit-transform: translateX(3px);
 	transform: translateX(2px);
 	z-index:100;
@@ -214,7 +211,7 @@ em {
  	animation-delay: 5500ms;
 }
 
-.kidmadrid-after, .reset-after {
+.kidmadrid-after {
 	-webkit-transform: translateX(-5px);
 	transform: translateX(-2px);
 	z-index: 110;
