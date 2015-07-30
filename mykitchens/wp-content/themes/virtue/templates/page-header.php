@@ -1,0 +1,15 @@
+<div class="page-header">
+	<h1 visibility="hidden" class="entry-title" itemprop="name" hidden>
+		<?php echo apply_filters('kadence_page_title', kadence_title() ); ?>
+	</h1>
+	
+   	<?php global $post; 
+  	if(is_page()) {
+  		$bsub = get_post_meta( $post->ID, '_kad_subtitle', true );
+  		if(!empty($bsub)){
+  			echo '<p class="subtitle"> '.__($bsub).' </p>';
+  		} 
+	} else if(is_category()) { 
+   		echo '<p class="subtitle">'.__(category_description()).' </p>';
+   	} ?>
+</div>
